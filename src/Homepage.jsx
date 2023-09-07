@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import React from 'react'
 import './App.css'
+import { Link } from 'react-router-dom';
+
 
 function Homepage() {
 
@@ -13,8 +15,7 @@ function Homepage() {
         <button>下載履歷</button>
       </div>
       <img src="img/001.jpeg" className='myPhoto'></img>
-    </div>
-     
+    </div>     
     </>
   )
 }
