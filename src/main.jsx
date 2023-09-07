@@ -1,24 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; // 引入Routes
 import Homepage from './Homepage';
-import Portfolio from './Portfolio'; // 作品集介紹頁面
+import Portfolio from './Portfolio'; 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">首頁</Link>
-        </li>
-        <li>
+        
+          <Homepage/>
           <Link to="/portfolio">作品集介紹</Link>
-        </li>
-      </ul>
-    </nav>
 
-    <Route path="/" exact component={Homepage} />
-    <Route path="/portfolio" component={Portfolio} />
+    <Routes>
+      <Route path="/" exact component={Homepage} />
+      <Route path="/portfolio" component={Portfolio} />
+    </Routes>
   </Router>
 );
 // React的環境建立在root的節點上，並進行渲染
