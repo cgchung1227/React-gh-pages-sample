@@ -1,12 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import NewApp from './NewApp'
-import ArraryMethods from './ArrayMethod'
-import Hooks from './Hook'
+import Homepage from './Homepage'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
-    <Hooks/>  
+    <Homepage/>  
   // </React.StrictMode>,
 )
 // React的環境建立在root的節點上，並進行渲染
