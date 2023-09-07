@@ -5,7 +5,7 @@ import Homepage from './Homepage';
 import Portfolio from './Portfolio'; 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
         
           <Homepage/>
           <Link to="/portfolio">作品集介紹</Link>
